@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <link rel="stylesheet" type="text/css" href="css/j-index.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-common.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/zcss.css"/>
+		<title>我的</title>
+	</head>
+	<body class="zmy zmynopr zbggry nopaddingbottom">
+		<div class="wrap color3">
+		  	 <div class="car-title">
+		  	 	<i class="back"></i>
+		  	 	  <i class="nav-list"></i>
+		  	 	  <p class="car-title-name">合伙人</p>
+		  	 </div>
+			
+			<!--内容部分-->
+			<div class="hehuo">
+			<p class="chaj fontyellow"><i class="fontgry">￥</i>150</p>
+			 
+			<div class="chajde fnclear">
+				<span class="fnleft">
+					<b class="zfontblue">3445</b>
+					<i>您的消费总额</i>
+				</span>			
+				<span class="fnleft">
+					<i></i>
+					<i></i>
+					<i></i>
+					<b>相差</b>
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+				<span class="fnleft">
+					<b>3445</b>
+					<i>目标金额</i>
+				</span>
+			</div>
+			</div>
+			<!-- 介绍 -->
+
+			<div class="hehnav">
+<h2>合伙人模式</h2>
+	<div class="vtitle"><em class="v v02"></em>如何成为合伙人？</div>
+		<div class="vcon">
+		<ul class="vconlist clearfix">
+			<li class="select"><a href="javascript:;">累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。</a></li>
+		</ul>
+	</div>
+	<div class="vtitle"><em class="v"></em>如何得到的分红？</div>
+		<div class="vcon" style="display: none;">
+		<ul class="vconlist clearfix">
+			<li><a href="javascript:;">累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。</a></li>
+		</ul>
+	</div>
+	<div class="vtitle"><em class="v"></em>如何成为合伙人？</div>
+		<div class="vcon" style="display: none;">
+		<ul class="vconlist clearfix">
+			<li><a href="javascript:;">累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。</a></li>
+		</ul>
+	</div>
+	
+	<h2>合伙人模式具体规则</h2>
+	<div class="vtitle"><em class="v v02"></em>如何成为合伙人？</div>
+		<div class="vcon">
+		<ul class="vconlist clearfix">
+			<li class="select"><a href="javascript:;">累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。</a></li>
+		</ul>
+	</div>
+	<div class="vtitle"><em class="v"></em>如何得到的分红？</div>
+		<div class="vcon" style="display: none;">
+		<ul class="vconlist clearfix">
+			<li><a href="javascript:;">累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。累计消费达到一定额度，即可成为合伙人，推广商品可获得分红。</a></li>
+		</ul>
+	</div>
+
+</div>
+	
+		</div>
+		  	
+
+	<script src="js/j-rem.js" type="text/javascript"></script>
+	<script src="js/jquerys-1.7.2.min.js" type="text/javascript"></script>
+	<script src="js/j-index.js" type="text/javascript"></script>
+	<script type="text/javascript">
+$(function(){
+	//菜单隐藏展开
+	var tabs_i=0
+	$('.vtitle').click(function(){
+		var _self = $(this);
+		var j = $('.vtitle').index(_self);
+		if( tabs_i == j ) return false; tabs_i = j;
+		$('.vtitle em').each(function(e){
+			if(e==tabs_i){
+				$('em',_self).removeClass('v01').addClass('v02');
+			}else{
+				$(this).removeClass('v02').addClass('v01');
+			}
+		});
+		$('.vtitle em.v02').click(function(){
+			$('.vcon').slideUp().this.slideDown();
+		});
+		$('.vcon').slideUp().eq(tabs_i).slideDown();
+	});
+})
+</script>
+    </body>	
+</html>

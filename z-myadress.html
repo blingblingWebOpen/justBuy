@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">	    	
+	    <link rel="stylesheet" type="text/css" href="css/j-index.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-common.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/zcss.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base2.css">
+		<title>我的</title>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+			<script type="text/javascript" src="js/custominput.js"></script>
+	<script type="text/javascript">
+$(function(){
+	
+	$('input').customInput();
+	
+	$('.toggle').each(function(){
+		$('div:first',this).addClass('first');
+		$('div:last',this).addClass('last');	
+	}); 
+});
+</script>
+	</head>
+	<body class="zmy zmynopr zbggry nopaddingbottom host">
+		<div class="wrap color3">
+		  	 <div class="car-title">
+		  	 	<i class="back"></i>
+		  	 	  <i class="nav-list"></i>
+		  	 	  <p class="car-title-name">管理收货地址</p>
+		  	 </div>
+			
+			<!--管理收货地址-->
+			
+			<!--收货地址-->
+			<div class="adresslist">
+				<div class="adrssdiv">
+					<div class="adrdiv01 xuanz"><span>夏青</span><strong><i></i>已有身份证证件照</strong> <span class="fnright"><label for="morenadr1">设为默认地址</label><input type="radio" name="morenadr" id="morenadr1" value="morenadr1" /></span></div>
+					<div class="adrdiv02">
+					<a href="z-myadressde.html"><span>1398980877</span><img class="fnright" src="img/arrow-r1.png"/></a></div>
+					<div class="adrdiv03">浙江省杭州市翠苑街道天目山路226号</div>
+				</div>
+				<div class="adrssdiv">
+					<div class="adrdiv01"><span>夏青</span><strong><i></i>已有身份证证件照</strong> <span class="fnright"><label for="morenadr2">设为默认地址</label><input type="radio" name="morenadr" id="morenadr2" value="morenadr2"/></span></div>
+					<div class="adrdiv02">
+					<a href="z-myadressde.html"><span>1398980877</span><img class="fnright" src="img/arrow-r1.png"/></a></div>
+					<div class="adrdiv03">浙江省杭州市翠苑街道天目山路226号</div>
+				</div>
+			</div>
+			
+			<!--添加收货地址-->
+			<a class="adrbtn" href="z-myadressde.html">添加收货地址</a>
+			
+			
+			
+			
+				</div>
+				</div>
+			</div>
+			
+
+
+
+	</div>
+		  	
+
+	<script src="js/j-rem.js" type="text/javascript"></script>
+	<!--<script src="js/jquerys-1.7.2.min.js" type="text/javascript"></script>-->
+	<script src="js/j-index.js" type="text/javascript"></script>
+	
+    </body>	
+</html>

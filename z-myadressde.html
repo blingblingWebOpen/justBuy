@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    	<link rel="stylesheet" href="css/sm.min.css">
+	    <link rel="stylesheet" href="css/sm-extend.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/j-index.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-common.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/zcss.css"/>
+	    
+		<title>我的</title>
+	</head>
+	<body class="zmy zmynopr zbggry">
+	
+		<div class="wrap color3">
+		  	 <div class="car-title">
+		  	 	<i class="back"></i>
+		  	 	  <i class="nav-list"></i>
+		  	 	  <p class="car-title-name">修改地址</p>
+		  	 	  <a class="redit">保存</a>
+		  	 </div>
+			
+			<!--收货人信息-->
+			<div class="adressde">
+				<p>
+<span>收货人</span><input type="text" name="name" id="name" value="">
+				</p>
+				<p>
+<span>手机号</span><input type="text" name="name" id="name" value="">
+				</p>
+				<p>
+<span>收货地址</span><input type="text" id='city-picker'/>
+				</p>
+				<p>
+<span>详细地址</span><input type="text" name="name" id="name" value="">
+				</p>
+			</div>
+
+			<!-- 清关资料 -->
+			<div class="adressde02">
+			<h2 class="adressde02t">
+			清关资料<i class="sc">已上传</i>
+			</h2>
+			<div class="adressde">
+			<p>
+<span>身份证</span><input type="text" name="name" id="name" value="">
+				</p>
+				<p>
+<span>身份证照片</span><textarea class="adrtipss" type="text" cols="100%" name="name" id="name" value="" readonly="">下单时，请务必上传与收货人姓名一致的身份证件（仅清关用）</textarea>
+				</p>
+			</div>
+			
+			<!-- 提示 -->
+			<div class="adrtips">
+				<span>
+					根据《中华人民共和国海关对进出口快件监管办法》第二十二条，办理海关入境清关手续时需提交收件人身份证明。
+				</span>
+			
+			</div>
+
+			<!-- 图片上传 -->
+			<div class="adresspicscd fnclear">
+<div class="fnleft" ><input type="file" name="正面"><img src="img/zpic03.png"><span>正面</span></div>
+<div class="fnright" ><input type="file" name="正面"><img src="img/zpic04.png"><span>反面</span></div>
+			</div>
+
+			</div>
+
+<!--添加收货地址-->
+			<a class="adrdel" href="">删除地址</a>
+<div class="page-group">
+    <div class="page page-current">
+        <input type="text" id='city-picker'/>
+    </div>
+</div>
+			</div>
+			
+			
+			
+			
+			
+				</div>
+				</div>
+			</div>
+			
+
+
+
+	</div>
+	<script type='text/javascript' src='js/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
+<script type="text/javascript" src="js/sm-city-picker.min.js" charset="utf-8"></script>
+<script>
+
+	// jQuery.noConflict();
+    $.init();
+    $("#city-picker").cityPicker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择收货地址</h1>\
+        </header>'
+    });
+
+
+
+</script>	  	
+
+	
+	 <script src="js/jquerys-1.7.2.min.js" type="text/javascript"></script> 
+	<script src="js/j-rem.js" type="text/javascript"></script>
+	 <script src="js/j-index.js" type="text/javascript"></script> 
+	
+	
+    </body>	
+</html>

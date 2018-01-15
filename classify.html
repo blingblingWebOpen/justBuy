@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <link rel="stylesheet" type="text/css" href="css/j-reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-common.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-index.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	    <script src="js/jquerys-1.7.2.min.js" type="text/javascript"></script>
+		<script src="js/j-rem.js" type="text/javascript"></script>
+		<script src="js/swiper.jquery.min.js" type="text/javascript"></script>
+		<script src="js/j-index.js" type="text/javascript"></script>
+    	<title>分类</title>
+	</head>
+	<body>
+
+		<div class="wrap color1">
+			  <div class="sort-wrap">
+			      <div class="classify-title">
+			  	 	  <i class="nav-list"></i>
+			  	 	  <p class="classify-name">分类</p>
+			  	  </div>
+				  <div class="search-bar clearfix">
+				  	  <i class="search-logo"></i>
+				  	  <input class="input"  placeholder="搜一搜你想要的商品"/>
+				  	  <i class="canc-logo"></i>
+				  	  <span class="cancle">取消</span>
+				  </div>
+				 
+				 <!-- 全部品牌 加 分类  -->
+				  <div class="all-brand clearfix">
+						<!-- 所有分类 -->
+							 <div class="all-kinds-wrap" >
+							 	 <i class="all-up"></i>
+								 <p class="qb-fl">全部分类</p>
+								 <ul class="all-kinds">
+								     <li id="brand1" class="aks-list"> 
+									    <div  class="img-wrap">
+									      <img class="one" src="img/brands-normal.png"> 
+										  <img class="two" src="img/brands-picked.png">
+									    </div>	 
+									    <span  class="list-name">品牌</span>
+									 </li>
+
+									 <li class="aks-list"> 
+								    	<div class="img-wrap">
+									     <img class="one" src="img/men-normal.png"> 
+										 <img class="two" src="img/men-picked.png">
+										</div>
+										 <span class="list-name">男士</span>
+									 </li>
+									 <li class="aks-list"> 
+									   <div class="img-wrap">
+									     <img class="one" src="img/women-normal.png"> 
+										 <img class="two" src="img/women-picked.png">
+										</div>
+										 <span class="list-name">女士</span>					
+									 </li>
+									 <li class="aks-list"> 
+									    <div class="img-wrap">
+									     <img class="one" src="img/baby-normal.png"> 
+										 <img class="two" src="img/baby-picked.png">
+										</div>
+										 <span class="list-name">母婴</span>					
+									 </li>
+									 <li class="aks-list"> 
+									    <div class="img-wrap">
+									     <img class="one" src="img/youth-normal.png"> 
+										 <img class="two" src="img/youth-picked.png">
+										</div>
+										 <span class="list-name">青少年</span>					
+									 </li>
+									 <li class="aks-list"> 
+									    <div class="img-wrap">
+									     <img class="one" src="img/adult-normal.png"> 
+										 <img class="two" src="img/adult-picked.png">
+										</div>
+										 <span class="list-name">成人通用</span>					
+									 </li>
+									 <li class="aks-list"> 
+									    <div class="img-wrap">
+									     <img class="one" src="img/dogfood-normal.png"> 
+										 <img class="two" src="img/dogfood-picked.png">
+										</div>
+										 <span class="list-name">狗粮</span>					
+									 </li>
+									 <li class="aks-list"> 
+									    <div class="img-wrap">
+									     <img class="one" src="img/milk-normal.png"> 
+										 <img class="two" src="img/milk-picked.png">
+										</div>
+										 <span class="list-name">奶粉</span>					
+									 </li>
+
+
+								 </ul>	
+							 </div>	
+
+					<!-- 品牌分类的轮播 -->
+							<div class="brands-list fl">
+								<i class="all-down"></i>
+							    <div class="swiper-wrapper " id="brand-btn">
+							       <div class="swiper-slide fl-picked">
+								         <div class="img-wrap">
+				                              <img class="one" src="img/all-normal.png"> 
+											  <img class="two" src="img/all-picked.png">
+			                             </div>
+										 <span class="list-name">全部</span>
+								    </div>  
+
+								    <div class="swiper-slide" id="brand">
+									     <div  class="img-wrap">
+									       <img class="one" src="img/brands-normal.png"> 
+										   <img class="two" src="img/brands-picked.png">
+									     </div>	 
+									     <span  class="list-name">品牌</span>
+								    </div>	
+
+								    <div class="swiper-slide">
+								    	<div class="img-wrap">
+									     <img class="one" src="img/men-normal.png"> 
+										 <img class="two" src="img/men-picked.png">
+										</div>
+										 <span class="list-name">男士</span>
+									 </div>
+									 <div class="swiper-slide">
+										   <div class="img-wrap">
+										     <img class="one" src="img/women-normal.png"> 
+											 <img class="two" src="img/women-picked.png">
+											</div>
+											 <span class="list-name">女士</span>			
+								    </div>
+								    <div class="swiper-slide">
+									    <div class="img-wrap">
+									     <img class="one" src="img/baby-normal.png"> 
+										 <img class="two" src="img/baby-picked.png">
+										</div>
+										 <span class="list-name">母婴</span>				
+								 </div>
+
+								 <div class="swiper-slide">
+									    <div class="img-wrap">
+									     <img class="one" src="img/youth-normal.png"> 
+										 <img class="two" src="img/youth-picked.png">
+										</div>
+										 <span class="list-name">青少年</span>				
+								 </div>
+								 
+								 <div class="swiper-slide">
+								    <div class="img-wrap">
+								      <img class="one" src="img/adult-normal.png"> 
+									  <img class="two" src="img/adult-picked.png">
+									</div>
+									<span class="list-name">成人通用</span>
+
+								 </div>
+								
+								 <div class="swiper-slide">
+									   <div class="img-wrap">
+									      <img class="one" src="img/dogfood-normal.png"> 
+										  <img class="two" src="img/dogfood-picked.png">
+										</div>
+										 <span class="list-name">狗粮</span>
+
+								 </div>
+								 <div class="swiper-slide">
+								       <div class="img-wrap">
+									     <img class="one" src="img/milk-normal.png"> 
+										 <img class="two" src="img/milk-picked.png">
+										</div>
+										 <span class="list-name">奶粉</span>
+								 </div>
+
+
+							 </div>	
+						</div>
+				   </div>	
+
+				  <div class="sort">
+				  	   <div class="sort-l">
+				  	   	    <a  class="sort-zh zs-pciked">综合排序</a>
+				  	   	    <a  class="sort-sh">最新上市</a>
+				  	   </div>
+				  	   <div class="sort-r">
+				  	   	    <i class="sort-change"></i>
+				  	   	    <i class="sort-choose"></i>
+				  	   </div>
+				  </div>
+				</div>  
+				
+				<div id="p1" class="product-container m3 clearfix">
+				  	 <div class="product">
+				   	    <i class="pro-new"></i>
+				   	    <i class="collect"></i>
+				   	    <i class="city"></i>
+				   	   <a class="pro-icon" href="pro-index.html">
+				   	      <img src="img/pro1.png">
+				   	   </a>
+				   	   <a class="pro-icon1-name" href="pro-index.html">Hopes Relief湿疹膏</a>
+				   	   <div class="hx"> <img class="hx-icon" src="img/hx.png"></div>
+				   	   <p class="pro1-price">￥327.00</p>
+				   	   <p class="sold">已售<span class="sold-num">342</span>件</p>
+				   </div>
+				   <div class="product">
+				   	    <i class="pro-new"></i>
+				   	    <i class="collect"></i>
+				   	    <i class="city"></i>
+				   	   <a class="pro-icon" href="pro-index.html">
+				   	      <img src="img/pro3.png">
+				   	   </a>
+				   	   <a class="pro-icon1-name" href="pro-index.html">Hopes Relief湿疹膏</a>
+				   	   <div class="hx"> <img class="hx-icon" src="img/hx.png"></div>
+				   	   <p class="pro1-price">￥327.00</p>
+				   	   <p class="sold">已售<span class="sold-num">342</span>件</p>
+				   </div>
+				   <div class="product">
+				   	    <i class="pro-new"></i>
+				   	    <i class="collect"></i>
+				   	    <i class="city"></i>
+				   	   <a class="pro-icon" href="pro-index.html">
+				   	      <img src="img/pro1.png">
+				   	   </a>
+				   	   <a class="pro-icon1-name" href="pro-index.html">Hopes Relief湿疹膏</a>
+				   	   <div class="hx"> <img class="hx-icon" src="img/hx.png"></div>
+				   	   <p class="pro1-price">￥327.00</p>
+				   	   <p class="sold">已售<span class="sold-num">342</span>件</p>
+				   </div>
+				   <div class="product">
+				   	    <i class="pro-new"></i>
+				   	    <i class="collect"></i>
+				   	    <i class="city"></i>
+				   	   <a class="pro-icon" href="pro-index.html"> 
+				   	      <img src="img/pro1.png">
+				   	   </a>
+				   	   <a class="pro-icon1-name" href="pro-index.html">Hopes Relief湿疹膏</a>
+				   	   <div class="hx"> <img class="hx-icon" src="img/hx.png"></div>
+				   	   <p class="pro1-price">￥327.00</p>
+				   	   <p class="sold">已售<span class="sold-num">342</span>件</p>
+				   </div>
+				   
+				  </div>
+				  
+				  <!-- 品牌的容器 -->
+				  <div class="pinpai-wrap m3 clearfix">
+				  		<div class="pinpai-list">
+				  		     <div class="pinpai-top">
+								<div class="pinpai-l fl">
+									<img src="img/ser-icon1.png">
+							   </div>
+							   <a class="pinpai-r fr " href="brand.html">
+								    <span class="pinpai-name fl">Lancome 兰蔻 
+								       <img class="pinpai-city " src="img/city.png">
+								     </span>
+								    <i class="to-brands"></i>
+							   </a>
+				  		     </div>
+				  		     <div class="pinpai-banner">
+                                  <div class="swiper-wrapper">
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon12.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon13.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						            </div> 
+				  		     </div>
+				  		</div>
+
+				  		 <div class="pinpai-list">
+				  		     <div class="pinpai-top">
+								<div class="pinpai-l fl">
+									<img src="img/ser-icon1.png">
+							   </div>
+							   <a class="pinpai-r fr " href="brand.html">
+								    <span class="pinpai-name fl">Lancome 兰蔻 
+								       <img class="pinpai-city " src="img/city.png">
+								     </span>
+								    <i class="to-brands"></i>
+							   </a>
+				  		     </div>
+				  		     <div class="pinpai-banner">
+                                  <div class="swiper-wrapper">
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon12.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon13.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						            </div> 
+
+
+				  		     </div>
+				  		</div> 
+
+				  		<div class="pinpai-list">
+				  		     <div class="pinpai-top">
+								<div class="pinpai-l fl">
+									<img src="img/ser-icon1.png">
+							   </div>
+							   <a class="pinpai-r fr " href="#">
+								    <span class="pinpai-name fl">Lancome 兰蔻 
+								       <img class="pinpai-city " src="img/city.png">
+								     </span>
+								    <i class="to-brands"></i>
+							   </a>
+				  		     </div>
+				  		     <div class="pinpai-banner">
+                                  <div class="swiper-wrapper">
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="brand.html">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon12.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon13.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						             <div class="swiper-slide">
+						            	<a class="pinpai-logo" href="#">
+						            		<img class="paipai-icon" src="img/pro-icon11.png"/>
+						            		<span class="pinpai-price">￥290</span>
+						            	</a>
+						             </div>
+						            </div> 
+
+
+				  		     </div>
+				  		</div> 
+				  </div>
+				  <div class="bottom">
+				  	   <div class="bottom-l fl"></div>
+				  	    <span class="bottom-word">哇，到底了</span>
+				  	   <div class="bottom-r fr"> </div>
+				  </div>
+			  
+			   <div class="navbar">
+	  	  	 	  <div class="list list-dowm">
+	  	  	 	  	  <a class="nav-icon" href="index.html">
+	  	  	 	  	  	 <img src="img/sy-normal.png"/>
+	  	  	 	  	  </a>
+	  	  	 	  	  <span class="nav-name">首页</span>
+	  	  	 	  </div>
+	  	  	 	  <div class="list list-dowm">
+	  	  	 	  	  <a class="nav-icon" href="classify.html">
+	  	  	 	  	  	<img src="img/fl-picked.png"/>
+	  	  	 	  	  </a>
+	  	  	 	  	  <span class="nav-name">分类</span>
+	  	  	 	  </div>
+	  	  	 	  <div class="list list-dowm">
+	  	  	 	  	  <a class="nav-icon" href="#">
+	  	  	 	  	  	<img src="img/zb-normal.png"/>
+	  	  	 	  	  </a>
+	  	  	 	  	  <span class="nav-name">直播</span>
+	  	  	 	  </div>
+	  	  	 	  <div class="list list-dowm">
+	  	  	 	  	  <a class="nav-icon" href="shopping-car.html">
+	  	  	 	  	  	<img src="img/gwc-normal.png"/>
+	  	  	 	  	  </a>
+	  	  	 	  	  <span class="nav-name">购物车</span>
+	  	  	 	  </div>
+	  	  	 	  <div class="list list-dowm">
+	  	  	 	  	  <a class="nav-icon" href="z-mycenter.html">
+	  	  	 	  	  	<img src="img/mine-normal.png"/>
+	  	  	 	  	  </a>
+	  	  	 	  	  <span class="nav-name">我的</span>
+	  	  	 	  </div>
+	  	  	 </div>
+		</div>
+	
+
+	<div id="mask">
+			  	   <div class="pro-brand clearfix">
+			  	   	<!-- <i class="to-down"></i> -->
+			  	   	  <p class="pro-brand-name">分类 </p>
+			  	   	  <ul class="pro-brand-filter">
+			  	   	  	  <li>老人</li>
+			  	   	  	  <li>女性</li>
+			  	   	  	  <li>男性</li>
+			  	   	  	  <li>儿童</li>
+			  	   	  	  <li>婴儿</li>
+			  	   	  </ul>
+			  	   </div>
+
+			  	   <div class="pro-brand clearfix">
+			  	   	  <p class="pro-brand-name">价格 </p>
+			  	   	  <ul class="pro-brand-filter">
+			  	   	   <li>0-50</li>
+			  	   	  	  <li>50-100</li>
+			  	   	  	  <li>100-200</li>
+			  	   	  	  <li>200-500</li>
+			  	   	  	  <li>500-1000</li>
+			  	   	  	  <li>1000以上</li>
+
+			  	   	  </ul>
+			  	   </div>
+			  	   
+			  	   <div class="choose-botton">
+			  	   	   <span class="remake picked">重置</span>
+			  	   	   <span class="sure">确定</span>
+			  	   </div>
+			  	   
+			  	   <i class="cancle-btn"></i>
+			  </div>
+
+	
+
+	 <script type="text/javascript">
+	 	 $(document).ready(function(){
+	 	 	var pinpai = new Swiper('.pinpai-banner', {
+		   		// autoplay:2000,
+		   		spaceBetween: 10,
+				slidesPerView: 3.3,
+		        paginationClickable: true,
+		        observer:true,
+                observeParents:true
+		        // freeMode : true,
+
+		        });
+	 	   // $('.pinpai-r').click(function(){
+	 	   // 	  $(this).css({"background":"#f2f2f2",})
+	 	   // });
+	 	  
+	 	   var brandList = new Swiper('.brands-list', {
+		   		// autoplay:2000,
+				slidesPerView: 5,
+		        paginationClickable: true,
+		        spaceBetween: 10,
+		        // initialSlide:2,
+		        });
+
+	 	   $('.all-kinds li').click(function(){
+
+	 	   		 brandList.slideTo($(this).index())
+
+
+	 	   })
+	 	 })	
+	 </script>
+	</body>
+</html>

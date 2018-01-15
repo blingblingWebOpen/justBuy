@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <link rel="stylesheet" type="text/css" href="css/j-index.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-common.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/zcss.css"/>
+		<title>我的</title>
+	</head>
+	<body class="zmy zmynopr zbggry nopaddingbottom">
+		<div class="wrap color3">
+		  	 <div class="car-title">
+		  	 	<i class="back"></i>
+		  	 	  <i class="nav-list"></i>
+		  	 	  <p class="car-title-name">订单详情</p>
+		  	 </div>
+			
+			<!--内容部分-->
+			
+			<!--订单状态-->
+			<div class="orderstate">
+				等待您来付款
+			</div>
+			
+			<!--地址信息-->
+			<div class="orderadr">
+				<p class="fnclear"><span>收货人</span><strong>李明</strong><i>13957389980</i></p>
+				<p class="fnclear"><span>收货地址</span><strong>浙江省杭州市余杭区良睦路1399号梦想小镇4栋309</strong></p>
+				<hr class="gryline" />
+				<p class="fnclear"><span>订单号</span><strong class="fontgry">439899877987777887</strong></p>
+				<p class="fnclear"><span>下单时间</span><strong class="fontgry">2017-01-23&nbsp;12:18:09</strong></p>
+			</div>
+			
+			
+			<div class="myorderlist">
+				<!--订单商品-->
+				<div class="order-list orderpayed">
+				
+				<div class="car-list clearfix">
+					 <div class="fl car-icon-one">
+						  
+						  <div class="car-product fr">
+						        <span class="product-num">9</span>
+								<img src="img/car-pro1.png">
+						  </div>
+					 </div>
+					 <div class="fr car-situ-one">
+							<p class="car-situ-top"> 
+								<span class="car-pro-name fl">兰蔻奇迹绽放香水</span>
+								<span class="car-pro-price fr">￥237</span>
+							</p>
+							<p class="car-situ-mid color-one">
+								<span class="car-pro-feature">玫瑰香味</span>
+								<span class="car-pro-wrap">30ML</span>
+							</p>
+							<!-- <p class="car-situ-mid color-two">
+								<span class="car-pro-feature">优惠套餐</span>
+								<span class="car-pro-wrap">2000包邮</span>
+							</p> -->
+					 </div>
+				</div>
+				<div class="car-list clearfix">
+					 <div class="fl car-icon-one">
+						  
+						  <div class="car-product fr">
+						        <span class="product-num">9</span>
+								<img src="img/car-pro1.png">
+						  </div>
+					 </div>
+					 <div class="fr car-situ-one">
+							<p class="car-situ-top"> 
+								<span class="car-pro-name fl">兰蔻奇迹绽放香水</span>
+								<span class="car-pro-price fr">￥237</span>
+							</p>
+							<p class="car-situ-mid color-one">
+								<span class="car-pro-feature">玫瑰香味</span>
+								<span class="car-pro-wrap">30ML</span>
+							</p>
+							<!-- <p class="car-situ-mid color-two">
+								<span class="car-pro-feature">优惠套餐</span>
+								<span class="car-pro-wrap">2000包邮</span>
+							</p> -->
+					 </div>
+				</div>
+				
+				</div>
+				
+				<!--商品价格-->
+				<div class="goodsdiv">				
+				<p class="totalprice fnclear"><span>商品总价</span><strong class="fontyellow">￥499</strong></p>
+				<p class="fnclear"><span>税费</span><strong >￥30</strong></p>				
+				<p class="fnclear"><span>运费  总质量   0,05KG</span><strong class="fontgry">￥2.3</strong></p>
+				<p class="fnclear"><span>优惠</span><strong class="fontgry">-￥0</strong></p>
+				<hr class="gryline" />
+				<p class="ordertotal fnclear"><i class="fontyellow">￥589.3</i><b>合计</b></p>
+				
+				<p class="caoz fnclear"><input type="button" class="yellowbtn" name="" id="" value="付款" /><input type="button" class="bluebtn" name="" id="" value="加入心愿单" /></p>
+				</div>
+				
+				
+				
+				
+					
+					
+					</div>
+				</div>
+				</div>
+			</div>
+			
+
+
+
+	</div>
+		  	
+
+	<script src="js/j-rem.js" type="text/javascript"></script>
+	<script src="js/jquerys-1.7.2.min.js" type="text/javascript"></script>
+	<script src="js/j-index.js" type="text/javascript"></script>
+	
+	<!--弹窗-->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>	
+
+<script type="text/javascript">
+	$(function(){
+		$('.zhezhao').hide();
+		$('.paydc').hide();
+		$('.caoz .yellowbtn').click(function(){
+			$('.zhezhao').show();
+			$('.paydc').show();
+		})
+		$('.zhezhao').click(function(){
+			$('.zhezhao').hide();
+			$('.paydc').hide();
+		})
+		
+	})
+</script>
+<div class="zhezhao"></div>
+<div class="paydc">
+	<h2>合计<i class="fontyellow">￥540.5</i></h2>
+	<p class="fnclear"><span><a class="bluebgbtn">支付宝付款</a></span><span><a class="greenbtn">微信付款</a></span></p>
+</div>
+<!--弹窗end-->	
+
+    </body>	
+</html>

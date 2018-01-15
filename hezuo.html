@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <link rel="stylesheet" type="text/css" href="css/j-shouye.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-common.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	    <script src="js/jquerys-1.7.2.min.js" type="text/javascript"></script>
+		<script src="js/swiper.jquery.min.js" type="text/javascript"></script>
+		<script src="js/j-rem.js" type="text/javascript"></script>
+		<script src="js/j-index.js" type="text/javascript"></script>
+		<title>合作洽谈</title>
+	</head>
+	<body>
+		<div class="wrap color1">
+		  	 <div class="nav-title">
+		  	 	  <i class="nav-list"></i>
+		  	 	  <a class="back"></a>
+		  	 	  <p class="nav-title-name">合作洽谈</p>
+		  	 </div>
+	  	  	
+	  	  	<div id="hezuo-tab">
+					 <a href="#" id="btn1" class="default">独家自荐<i class="hezuo-tab-bg"></i></a>
+					 <a href="#" id="btn2">媒体合作<i class="hezuo-tab-bg"></i></a>
+					 <a href="#" id="btn3">业务合作<i class="hezuo-tab-bg"></i></a>
+	  	  		</div>
+
+	  	  		<div class="tab-container">
+		  		<div class="swiper-wrapper">
+		  			<div class="swiper-slide">
+						<p class="hezuo-title">孤芳不自赏，独家自荐</p>
+						<p class="hezuo-content">如果你生活在海外并对当地的精品了如指掌</p>
+						<p class="hezuo-content">如果你动不动就来场说走就走的旅行，积攒了各种边走边买的经验</p>
+						<p class="hezuo-content">如果你人在内，心在外的海外代沟的top达人</p>
+					    <p class="heuzo-lx">赶紧联系“栗子” <i class="lx-down"></i></p>
+					    <p class="hezuo-zb">我们将带你装逼带你飞</p>
+		  			</div>
+		  			<div class="swiper-slide">
+						<p class="hezuo-title">媒体合作</p>
+						<p class="hezuo-content">其实...我很低调，但是仍然希望得到媒体朋友们的关注哟！</p>
+						<p class="hezuo-content">如有各种问题，合作和建议</p>
+					    <p class="heuzo-lx">赶紧联系“栗子” <i class="lx-down"></i></p>
+		  			</div>
+		  			<div class="swiper-slide">
+						<p class="hezuo-title">业务合作</p>
+						<p class="hezuo-content">如果我们的合作品牌中没有您，而您又愿意选择“栗子”，不妨来聊聊吧。我们的推荐完全基于各地正宗精品，谢绝山寨和伪劣产品。</p>
+		  			</div>
+		  		</div>
+		  	</div>
+	  	  	
+			
+			<div class="hezuo-bottom">	
+				 <span class="fl">栗子官网</span>
+				 <span class="fr">010-12345677 <i class="touch-r"></i></span>	
+			</div>
+
+		</div>
+
+	
+
+	 <script type="text/javascript">
+	 var hezuo = new Swiper('.tab-container',{
+	 		slidesPerView: 1,
+ 			speed:500,
+ 			onSlideChangeStart:function(hezuo){
+ 				$('#hezuo-tab .default').removeClass('default');
+ 				$('#hezuo-tab a').eq(hezuo.activeIndex).addClass('default');
+ 			}
+		})
+		 $("#hezuo-tab a").on('touchstart mousedown' , function(e){
+		 	e.preventDefault()
+		 	$("#hezuo-tab .default").removeClass('default');
+		 	$(this).addClass('default');
+		 	hezuo.slideTo($(this).index())
+		 })
+	 	$("#hezuo-tab a").click(function(e){
+	 		e.preventDefault()
+	 	});
+
+
+	 
+	 </script>
+	</body>
+</html>

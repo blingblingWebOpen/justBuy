@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <link rel="stylesheet" type="text/css" href="css/j-index.css">
+	    <link rel="stylesheet" type="text/css" href="css/j-shouye.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/j-common.css"/>
+		<script src="js/jquerys-1.7.2.min.js" type="text/javascript"></script>
+		<script src="js/j-rem.js" type="text/javascript"></script>
+		<script src="js/j-index.js" type="text/javascript"></script>
+		<title>收藏</title>
+	</head>
+<body style="background: #f8f8f8">
+    <div class="wrap"> 
+
+   			 <div class="car-title">
+   			 	  <a class="back"></a>
+		  	 	  <i class="nav-list"></i>
+		  	 	  <p class="car-title-name">我的收藏</p>
+		  	 </div>
+			 
+			  <div class="collection-tab">
+                   <a class="nr addc" >内容 <i class="hezuo-tab-bg1"></i></a>
+                   <a class="nr" href="collection-sp.html">商品 <i class="hezuo-tab-bg1"></i></a>
+			  </div>
+			 
+			 
+			<div class="shoucang">
+				<div class="shoucang-icon">
+					<img src="img/shouca1.png">
+				</div>	
+				<p class="shoucang-title">收藏内容这就是标题啊 </p>
+				<div class="shoucang-info clearfix">
+				  <span>收藏时间</span>
+				  <span class="shangcang-time">2017-1-23</span>	
+				   <span class="fr"><i class="sc-btn"></i></span>
+				</div>
+			</div>
+
+			<div class="shoucang">
+					<div class="shoucang-icon">
+						<img src="img/shouca2.png">
+					</div>	
+					<p class="shoucang-title">收藏内容这就是标题啊 </p>
+					<div class="shoucang-info clearfix">
+					  <span>收藏时间</span>
+					  <span class="shangcang-time">2017-1-23</span>	
+					   <span class="fr"><i class="sc-btn"></i></span>
+					</div>
+				</div>
+
+				<div class="bottom">
+				  	   <div class="bottom-l fl"></div>
+				  	    <span class="bottom-word">哇，到底了</span>
+				  	   <div class="bottom-r fr"> </div>
+				  </div>
+			
+	</div>
+	<!-- 遮罩层 -->
+	<div class="sc-cover">
+	     <div class="sc-cover-top">
+			<a class="cover-share" href="">分享</a> 
+			<a class="cover-del" href="">删除</a>
+	     </div>
+		 <a class="cover-canl" href="">取消</a>
+	</div>
+	<div id="sc-mask"></div>
+
+	
+	<script type="text/javascript">
+		$('.sc-btn').click(function(){
+			$('#sc-mask').fadeIn(200);
+			$('.sc-cover').fadeIn(300);
+			$('html,body').addClass("overfw");
+		})
+		$('.cover-canl').click(function(){
+			$('#sc-mask').hide();
+			$('.sc-cover').hide();
+			$("html,body").removeClass("overfw");
+		})
+	</script>
+    </body>	
+</html>
